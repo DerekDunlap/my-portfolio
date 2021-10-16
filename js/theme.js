@@ -287,7 +287,7 @@ var submit = $('#submit-btn'); // submit button
 // form submit event
 form.on('submit', function (e) {
 	e.preventDefault(); // prevent default form submit
-	window.location.reload()
+	submit.data('original-text')
 
 	// if (typeof $('#google-recaptcha-v3').val() != "undefined") {
 	// 	grecaptcha.ready(function () {
