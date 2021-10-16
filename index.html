@@ -364,7 +364,7 @@
               <h2 class="text-10 font-weight-600 text-center text-lg-left mb-5 text-dark">Connect</h2>
               <!-- Contact Form -->
               <form id="contact-form" class="form-border"
-                name="contact" data-netlify="true" method="post">
+                name="contact" data-netlify-recaptcha="true" data-netlify="true" method="post">
                 <div class="form-group mb-4 text-lte">
                   <label for="name">What is Your Name?</label>
                   <input id="name" name="name" type="text" class="form-control py-1 text-lte" required>
@@ -380,6 +380,7 @@
                 </div>
                 <!-- <div class="g-recaptcha" name="g-recaptcha" data-sitekey="6LeAMMwcAAAAACCRD7UsZ4E795Nnqm_xwDigojNj"></div> -->
                 <p class="pt-2 mb-0 text-center text-lg-left">
+                  <div data-netlify-recaptcha="true"></div>
                   <button id="submit-btn" class="btn btn-dark rounded-0 d-inline-flex" type="submit" name="submit">Send
                     <span class="ml-3"><i class="fas fa-arrow-right"></i></span></button>
                 </p>
